@@ -43,7 +43,8 @@ public class TestGame extends TestCase {
 		loc.put(2, 44);
 			assertEquals(1, newGame.isGameOver(loc));
 	}
-			
+	
+	@Test
 	public void testplayer2Wins(){
 		Game newGame =new Game();
 		newGame.turn=2;
@@ -53,6 +54,7 @@ public class TestGame extends TestCase {
 			assertEquals(2, newGame.isGameOver(loc));
 			
 	}
+	@Test
 	public void testNobodyWins(){
 		Game newGame =new Game();
 		loc.put(1, 88);
